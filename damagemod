@@ -2,8 +2,10 @@ while wait(0.001) do
     local setting = require(game.Players.LocalPlayer.Backpack:WaitForChild("Tec-9 Drum").Setting)
     if setting then
     setting.BaseDamage = 100
+    print("Found Tec-9 Drum in player")
     else
         local setting2 = require(game.Players.LocalPlayer.Character:WaitForChild("Tec-9 Drum").Setting)
         setting2.BaseDamage = 100
+        print("Found Tec-9 Drum in character")
     end
 end
